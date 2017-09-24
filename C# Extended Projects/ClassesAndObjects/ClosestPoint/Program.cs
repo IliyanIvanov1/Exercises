@@ -25,8 +25,6 @@ namespace ClassesAndObjects
 
             var listOfPoints = new List<Point>();
 
-
-
             for (int i = 0; i < n; i++)
             {
                 var currentPoint = CreatePoint();
@@ -61,13 +59,11 @@ namespace ClassesAndObjects
         {
             var point = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
-
             return new Point
             {
                 X = point[0],
                 Y = point[1]
             };
-
         }
         public static double Distance(Point firstPoint, Point secondPoint)
         {
