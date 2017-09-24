@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesAndObjects", "Classe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClosestPoint", "ClosestPoint\ClosestPoint.csproj", "{DA91C1C7-FA1F-45EB-9593-35A8C09A6E6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsRectangleInside", "IsRectangleInside\IsRectangleInside.csproj", "{EE3502C2-1BF1-4B4C-8E37-40D12EDB84C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DA91C1C7-FA1F-45EB-9593-35A8C09A6E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA91C1C7-FA1F-45EB-9593-35A8C09A6E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA91C1C7-FA1F-45EB-9593-35A8C09A6E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE3502C2-1BF1-4B4C-8E37-40D12EDB84C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3502C2-1BF1-4B4C-8E37-40D12EDB84C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3502C2-1BF1-4B4C-8E37-40D12EDB84C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3502C2-1BF1-4B4C-8E37-40D12EDB84C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
