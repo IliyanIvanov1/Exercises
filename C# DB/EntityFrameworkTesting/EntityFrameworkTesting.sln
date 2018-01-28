@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopDB", "PetShopDB\PetS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleProject", "PeopleProject\PeopleProject.csproj", "{BAE997C4-1D07-46DD-95C1-CD5C20E43045}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsSimulator", "CarsSimulator\CarsSimulator.csproj", "{B7FF85D9-F66E-4D1A-861F-8045BB20FE0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BAE997C4-1D07-46DD-95C1-CD5C20E43045}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAE997C4-1D07-46DD-95C1-CD5C20E43045}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAE997C4-1D07-46DD-95C1-CD5C20E43045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7FF85D9-F66E-4D1A-861F-8045BB20FE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FF85D9-F66E-4D1A-861F-8045BB20FE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FF85D9-F66E-4D1A-861F-8045BB20FE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FF85D9-F66E-4D1A-861F-8045BB20FE0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
