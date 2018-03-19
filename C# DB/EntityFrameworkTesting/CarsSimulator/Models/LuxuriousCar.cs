@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarsSimulator.Models
 {
-    public class LuxuriousCar:Car
+    public class LuxuriousCar : Car
     {
         public int LitersOfChampagne { get; set; }
 
