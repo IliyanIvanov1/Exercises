@@ -29,7 +29,7 @@
             {
                 var task= Task.Run(() =>
                 {
-                    var image = Image.FromFile(file.FullName);
+                    var image = Image.FromFile(file.FullName + "1");
                     image.RotateFlip(RotateFlipType.RotateNoneFlipY);
                     image.Save($"{resultDir}\\flip-{file.Name}");
 
@@ -38,7 +38,18 @@
 
                 tasks.Add(task); 
             }
-            Task.WaitAll(tasks.ToArray());
+
+            try
+            {
+                Task.WaitAll(tasks.ToArray());
+            }
+            catch (AggregateException ex)
+            {
+                foreach (var exception in ex.InnerExceptions)
+                {
+                    Console.WriteLine(exception.Message);
+                }
+            }
 
             Console.WriteLine("Process finished!");
         }
