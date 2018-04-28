@@ -2,7 +2,12 @@
 
 <form method="get">
     <input type="text" name="searchTerm" placeholder="Search Cakes..." />
-    <input type="submit" value="Search" />
+    <input type="submit" value="{{{searchTerm}}}" />
 </form>
+
+<div style="display: {{{showCart}}}">
+    Your Cart: {{{products}}}
+</div>
+
 
 {{{results}}}

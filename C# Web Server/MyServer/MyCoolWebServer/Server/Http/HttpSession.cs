@@ -41,6 +41,9 @@
             return this.values[key];
         }
 
+        public bool Contains(string key) => this.values.ContainsKey(key);
+
+
         public T Get<T>(string key)
             => (T) this.Get(key);
         

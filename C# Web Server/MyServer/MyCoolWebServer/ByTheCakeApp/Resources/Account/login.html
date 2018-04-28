@@ -1,0 +1,19 @@
+﻿<h2>Login</h2>
+
+<form method="post">
+    <label for="name">Username:</label>
+    <input id="name" type="text" name="username" placeholder="Name" />
+    <br />
+    <label for="password">Password:</label>
+    <input id="password" name="password" placeholder="Password" />
+    <br />
+    <input type="submit" value="Login" />
+</form>
+
+<div style="display: {{{showError}}}; color:red">
+    {{{error}}}
+</div>
+
+<br />
+
+Don't have an account? <a href="/register">Create one here!</a>

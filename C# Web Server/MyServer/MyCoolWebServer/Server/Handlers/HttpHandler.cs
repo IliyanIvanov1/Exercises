@@ -18,11 +18,22 @@
         {
             CoreValidator.ThrowIfNull(routeConfig, nameof(routeConfig));
 
-            this.serverRouteConfig = routeConfig;
+            this.serverRouteConfig = routeConfig;   
         }
 
         public IHttpResponse Handle(IHttpContext context)
         {
+            try
+            {
+                //Check if user is authenticated
+                var anonymousPath = new[] { "/login", "/register" };
+
+                if (!anonymousPath.Contains(context.Request.Path) &&
+                    !context.Request.Session.Contains(SessionStore.CurrentUserKey))
+                {
+                    return new RedirectResponse(anonymousPath.First());
+                }
+
                 var requestMethod = context.Request.Method;
                 var requestPath = context.Request.Path;
                 var registeredRoutes = this.serverRouteConfig.Routes[requestMethod];
@@ -50,6 +61,11 @@
 
                     return routingContext.Handler.Handle(context);
                 }
+            }
+            catch (Exception ex)
+            {
+                return new InternalServerErrorResponse(ex);
+            }
             
 
             return new NotFoundResponse();

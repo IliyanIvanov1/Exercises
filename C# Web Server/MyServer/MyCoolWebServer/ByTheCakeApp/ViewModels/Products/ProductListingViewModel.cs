@@ -1,8 +1,6 @@
-﻿namespace MyCoolWebServer.ByTheCakeApp.Models
+﻿namespace MyCoolWebServer.ByTheCakeApp.ViewModels.Products
 {
-    using System.Collections.Generic;
-
-    public class Cake
+    public class ProductListingViewModel
     {
         public int Id { get; set; }
 
